@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Typography & Base */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fdfdfd;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background: white;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00bcd4;
+  }
+  
+  .nav {
+    position: relative;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Hamburger */
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #00bcd4, #2196f3);
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    padding: 0.9rem 2rem;
+    background: white;
+    color: #2196f3;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #e0f7fa;
+  }
+  
+  /* Footer */
+  footer {
+    background: #f5f5f5;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .social-links a {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #666;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #2196f3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: white;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      width: 200px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
